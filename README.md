@@ -9,7 +9,7 @@ This is an example application for cli tool development.
     npm install
     npm link
     
-Change the name of .env.sample to .env and update with your open weather api key.
+Change the name of .env.sample to .env and update it with your open weather api key.
 
 ## commands
 
