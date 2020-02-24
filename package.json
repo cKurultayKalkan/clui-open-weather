@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {},
   "bin": {
-    "istanbul": "bin/istanbul"
+    "havalarnasil": "bin/havalarnasil"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
