@@ -1,4 +1,4 @@
-# clui-open-weather
+# havalarnasil
 
 ## description
 
