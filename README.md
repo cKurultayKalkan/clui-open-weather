@@ -14,6 +14,7 @@ Change the name of .env.sample to .env and update it with your open weather api 
 ## commands
 
     havalarnasil [command] <options>
-    havalarnasil today`
+    havalarnasil today
     havalarnasil today --location <LocationName>
+    havalarnasil forecast --location <LocationName>
 
