@@ -2,6 +2,8 @@ const chalk = require('chalk');
 
 const { version } = require('../package.json');
 
+const { log } = console;
+
 module.exports = (args) => {
-  console.log(chalk.red(`v${version}`));
+  log(chalk.red(`v${version}`));
 };

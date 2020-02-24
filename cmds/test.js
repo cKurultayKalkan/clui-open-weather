@@ -5,6 +5,7 @@ const clc = require('cli-color');
 const {
   Line, LineBuffer, Progress, Spinner, Sparkline,
 } = clui;
+const { log } = console;
 
 module.exports = (args) => {
   const outputBuffer = new LineBuffer({
@@ -31,7 +32,7 @@ module.exports = (args) => {
   const used = total - free;
   const humanreadleram = `${Math.ceil(used / 1000000)} MB`;
 
-  console.log(clui.Gauge(used, total, 40, total * 0.8, humanreadleram));
+  log(clui.Gauge(used, total, 40, total * 0.8, humanreadleram));
 
 
   new Line(outputBuffer)
@@ -42,7 +43,7 @@ module.exports = (args) => {
 
   const reqsPerSec = [10, 12, 3, 7, 12, 9, 23, 10, 9, 19, 16, 18, 12, 12];
 
-  console.log(Sparkline(reqsPerSec, 'reqs/sec'));
+  log(Sparkline(reqsPerSec, 'reqs/sec'));
 
 
   new Line(outputBuffer)
@@ -52,7 +53,7 @@ module.exports = (args) => {
     .output();
 
   const thisProgressBar = new Progress(20);
-  console.log(thisProgressBar.update(10, 30));
+  log(thisProgressBar.update(10, 30));
 
 
   new Line(outputBuffer)
@@ -77,7 +78,7 @@ module.exports = (args) => {
 
 
   const thisPercentBar = new Progress(20);
-  console.log(thisPercentBar.update(0.4));
+  log(thisPercentBar.update(0.4));
 
 
   new Line(outputBuffer)
