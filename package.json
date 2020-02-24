@@ -1,0 +1,13 @@
+{
+  "name": "clui-open-weather",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {},
+  "bin": {
+    "istanbul": "bin/istanbul"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}
