@@ -20,6 +20,9 @@ module.exports = () => {
     case 'forecast':
       require('./cmds/forecast')(args);
       break;
+    case 'test':
+      require('./cmds/test')(args);
+      break;
     case 'version':
       require('./cmds/version')(args);
       break;
